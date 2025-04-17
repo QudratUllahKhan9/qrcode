@@ -69,19 +69,20 @@ const UserDetail = () => {
           <img src={cartimage} alt="Bureau Veritas" />
         </span>
       </div>
-      <div>
-        <a
-          href="https://group.bureauveritas.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bv-link"
-        >
-          <p style={{ padding: 10, width: 180 }}>
-            <span style={{ display: 'block', fontSize: 11, textAlign: 'center' }}>Visit</span>
-            <b style={{ fontWeight: 'lighter' }}>Bureau Veritas Website</b>
-          </p>
-        </a>
-      </div>
+        <div className="footer-p">
+  <a
+    href="https://group.bureauveritas.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bv-link"
+  >
+    <p style={{ padding: 10, width: 180 }}>
+      <span style={{ display: 'block', fontSize: 11, textAlign: 'center' }}>Visit</span>
+      <b style={{ fontWeight: 'bolder' }}>Bureau Veritas Website</b>
+    </p>
+  </a>
+</div>
+
     </div>
   );
 };
