@@ -24,6 +24,8 @@ const UserDetail = () => {
     fetchData();
   }, [id]);
   
+  
+  if (!data) return <div></div>;
 
   return (
     <div className="main-container">
