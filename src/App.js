@@ -83,7 +83,7 @@ const UserDetail = () => {
     </p>
   </a>
 </div>
-
+</div>
     </div>
   );
 };
