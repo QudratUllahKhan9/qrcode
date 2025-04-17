@@ -34,7 +34,9 @@ const UserDetail = () => {
           <img src="/images.jpg" alt="Fingerprint" className="fingerprint" />
         </div>
         <div className="header-text">
-          <span className="header-title">Authenticate your document</span>
+        <span className="header-title">
+  <strong>Authenticate</strong> <span className="thin-text">your document</span>
+</span>
           <span className="header-subtext">
             Thank you for submitting your document for verification.<br />
             Please find below the answer to your request.
