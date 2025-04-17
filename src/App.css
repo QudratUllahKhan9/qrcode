@@ -9,10 +9,14 @@ body, html {
   display: flex;
   flex-direction: column;
   background: url('../public/gbdownload.jpg') no-repeat center center;
-  background-size:cover;
-  background-attachment: fixed; /* This makes the background stay fixed on scroll */
-  min-height: 100vh;
+  background-size: cover;               /* Ensures full coverage */
+  background-attachment: fixed;         /* Keeps it fixed during scroll */
+  background-position: center center;   /* Ensures center alignment */
+  background-repeat: no-repeat;         /* Prevents tiling */
+  min-height: 100vh;                    /* Full viewport height */
+  width: 100%;                          /* Full width */
 }
+
 
 .header {
   display: flex;
@@ -21,7 +25,7 @@ body, html {
   color: white;
   position: sticky;
   top: 0;
-  z-index: 1000px;
+  z-index: 10000px;
   padding: 10px;
 }
 
@@ -44,6 +48,7 @@ body, html {
   font-size: 38px;
   font-weight: 500;
   display: block;margin-bottom: 10px;
+
 }
 
 .header-subtext {
@@ -73,6 +78,7 @@ body, html {
   overflow: hidden;
   background: white;
     margin-bottom: -2.2%; 
+    
 
 }
 
@@ -150,6 +156,7 @@ body, html {
   text-decoration: none;
   color: inherit;
   display: inline-block;
+  background-attachment: fixed; 
 }
 
 .bv-link:hover,
@@ -160,15 +167,32 @@ body, html {
 
 @media (max-width: 768px) {
   .header-title {
-    font-size: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: -10px;
   }
 
   .header-subtext {
-    font-size: 12px;
+    font-size: 11px;
+    /* margin-top: -15px; */
+    display: block;
+    
   }
-
+  
+  .header {
+    display: flex;
+    align-items: center;
+    background-color: #00049E;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000px;
+    padding: 10px;
+    height: 9vh;
+  }
   .fingerprint {
-    width: 50px;
+    width: 60px;
   }
 
   .data-row {
@@ -187,19 +211,82 @@ body, html {
   }
   .data-card-header{
     margin-bottom: -20.4px;
+    background: linear-gradient(135deg, #C5C5C5, #666);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
   }
   .data-card-wrapper-main{
+    
     /* margin-bottom: 20%;  */
   }
   .data-card-wrapper{
     height: 60vh;
     margin-bottom: -3%; 
+    z-index: 4000;
     
 
+  }.footer-p {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
   }
+  
   .bottom-image{
     padding: 0%;
   }
 
+  .fingerprint {
+    width: 45px;
+    height: auto;
+  }
+  .header-text {
+    /* background-color: aqua; */
+ height: 6vh;
+   
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    background-color: #00049E;
+    color: white;
+    position: sticky;
+    top: 0;
+z-index: 10000;
+    padding: 10px;
+  }
+  .data-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 6px 0;
+    font-size: 12.5px;
+    color: #000;
+    flex-direction: column;
+  }
+  .data-card-wrapper {
  
+    margin: 20px auto;
+    height: 80%;
+    overflow: hidden;
+    background: white;
+      margin-bottom: -3.2%; 
+      
+  
+  }
+  .main-container {
+    background-attachment: scroll;                        /* Full width */
+  }
+  .fingerprint-wrapper {
+    flex: 0 0 auto;
+    padding: 5px;
+  }
+  .thin-text {
+    color: #666;
+    font-weight: 0px; /* Or try 200 for even thinner */
+  }
+  
 }
