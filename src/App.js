@@ -70,7 +70,6 @@ const UserDetail = () => {
         <span className="bottom-image">
           <img src={cartimage} alt="Bureau Veritas" />
         </span>
-      </div>
         <div className="footer-p">
   <a
     href="https://group.bureauveritas.com/"
@@ -79,7 +78,7 @@ const UserDetail = () => {
     className="bv-link"
   >
     <p style={{ padding: 10, width: 180 }}>
-      <span style={{ display: 'block', fontSize: 11, textAlign: 'center' }}>Visit</span>
+      <span style={{ display: 'block', fontSize: 16, textAlign: 'center' }} className="visitFoot">Visit</span>
       <b style={{ fontWeight: 'bolder' }}>Bureau Veritas Website</b>
     </p>
   </a>
