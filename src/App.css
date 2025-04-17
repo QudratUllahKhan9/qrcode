@@ -230,9 +230,10 @@ body, html {
 
   }.footer-p {
     position: fixed;
-    bottom: 20px;
+    bottom: -20px;
     left: 20px;
     z-index: 1000;
+    /* background-color: #00049E; */
   }
   
   .bottom-image{
@@ -278,15 +279,25 @@ z-index: 10000;
   
   }
   .main-container {
-    background-attachment: scroll;                        /* Full width */
+    display: flex;
+    flex-direction: column;
+    background: url('../public/background_industry.jpg') no-repeat center center;
+    background-size: cover;               /* Ensures full coverage */
+    background-attachment: fixed;         /* Keeps it fixed during scroll */
+    background-position: center center;   /* Ensures center alignment */
+    background-repeat: no-repeat;         /* Prevents tiling */
+    min-height: 100vh;                    /* Full viewport height */
+    width: 100%;                          /* Full width */
   }
   .fingerprint-wrapper {
     flex: 0 0 auto;
     padding: 5px;
   }
   .thin-text {
-    color: #666;
-    font-weight: 0px; /* Or try 200 for even thinner */
+    /* color: #666; */
+    font-weight: 100px; /* Or try 200 for even thinner */
   }
-  
+  .visitFoot{
+    font-size: 16px;
+  }
 }
