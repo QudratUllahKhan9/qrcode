@@ -25,7 +25,7 @@ const UserDetail = () => {
   }, [id]);
   
   
-  if (!data) return <div></div>;
+  if (!data) return <div>we</div>;
 
   return (
     <div className="main-container">
